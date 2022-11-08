@@ -6,7 +6,7 @@ ENV LANG en_US.UTF-8
 
 # Update & Install basics
 RUN apt-get update
-RUN yes | apt-get install \
+RUN apt-get install -y \
   locales \
   libstdc++6 \
   lib32stdc++6 \
