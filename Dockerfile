@@ -6,7 +6,7 @@ ENV LANG en_US.UTF-8
 
 # Update & Install basics
 #RUN apt-get update
-RUN apt update && apt install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     locales \
     libstdc++6 \
     lib32stdc++6 \
