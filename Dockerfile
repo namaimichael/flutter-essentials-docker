@@ -5,17 +5,17 @@ MAINTAINER Michael Martin <michael.martin@zebra.com>
 ENV LANG en_US.UTF-8
 
 # Update & Install basics
-RUN apt-get update
-RUN apt-get install -y \
-  locales \
-  libstdc++6 \
-  lib32stdc++6 \
-  libglu1-mesa \
-  build-essential \
-  ruby-full \
-  rubygems \
-  nodejs \
-  npm
+#RUN apt-get update
+RUN apt update && apt install -y --no-install-recommends \
+    locales \
+    libstdc++6 \
+    lib32stdc++6 \
+    libglu1-mesa \
+    build-essential \
+    ruby-full \
+    rubygems \
+    nodejs \
+    npm
   
 # Install fastlane
 RUN gem install fastlane -NV \
