@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 
 LABEL org.opencontainers.image.authors="Michael Martin <michael.martin@zebra.com>"
+LABEL org.opencontainers.image.description="Flutter Docker Essestials"
 
 # Prerequisites
 RUN apt update && apt install -y curl git unzip xz-utils zip libglu1-mesa openjdk-8-jdk wget
