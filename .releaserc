@@ -10,7 +10,7 @@
       "@semantic-release/changelog",
       {
         "changelogFile": "CHANGELOG.md",
-        "changelogTitle": "# Flutter Changelog"
+        "changelogTitle": "# Flutter App Changelog"
       }
     ],
     [
